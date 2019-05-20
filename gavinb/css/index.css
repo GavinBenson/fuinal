@@ -1,0 +1,143 @@
+#master {
+  font-family: 'Noto Sans', sans-serif;
+  font-size:100%;
+  word-wrap: break-word;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-gap: 10px;
+  grid-template-areas:
+  'hd hd hd hd'
+  'cnt cnt cnt sde'
+  'cnt cnt cnt sde'
+  'cnt cnt cnt sde'
+  'cnt cnt cnt sde'
+  'ft ft ft ft';
+}
+
+#header {
+  grid-area: hd;
+  background-color: #97fcb9;
+  padding: 10px;
+  border: 2px solid #fc0;
+  box-shadow: 2px 2px 2px #444;
+}
+
+#content {
+  grid-area: cnt;
+  background-color: #97fcf2;
+  padding: 25px;
+  border: 2px solid #fc0;
+  box-shadow: 2px 2px 2px #444;
+}
+
+
+#side {
+  grid-area: sde;
+  padding: 25px;
+  background-color: #ddc7e0;
+  border: 2px solid #fc0;
+  box-shadow: 2px 2px 2px #444;
+}
+
+.imgside {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer {
+  grid-area: ft;
+  padding: 10px;
+  background-color: #fcfa97;
+  border: 2px solid #fc0;
+  box-shadow: 2px 2px 2px #444;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (max-width:1200px) {
+  #master  {
+    font-size:1.1em;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #side {
+    width:100%;
+  }
+  #master  {
+    font-size:1.2em;
+    /*font-family: 'Krona One', sans-serif;*/
+    grid-template-areas:
+    'hd hd hd hd'
+    'cnt cnt cnt cnt'
+    'cnt cnt cnt cnt'
+    'cnt cnt cnt cnt'
+    'sde sde sde sde'
+    'sde sde sde sde'
+    'sde sde sde sde'
+    'ft ft ft ft';
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #master {
+      font-size:1.4em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #master {
+      font-size:1.6em;
+    }
+}
+
+/*
+#left {
+  box-sizing:border-box;
+  background-color:#fcddd9;
+  padding:20px;
+  float:left;
+  width:20%;
+}
+
+#center {
+  box-sizing:border-box;
+  background-color:#ddfcd9;
+  padding:20px;
+  float:left;
+  width:60%;
+}
+
+#right {
+  box-sizing:border-box;
+  background-color:#a6befc;
+  padding:20px;
+  float:left;
+  width:20%;
+}*/

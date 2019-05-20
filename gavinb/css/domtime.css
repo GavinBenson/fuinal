@@ -1,0 +1,9 @@
+
+
+#clockDisplay {
+    background-color: burlywood;
+    padding: 5px;
+    width: 15%;
+    border-style: outset;
+    border-radius: 5px;
+}

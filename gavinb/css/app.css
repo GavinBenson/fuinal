@@ -1,0 +1,20 @@
+body {
+    background-color: bisque;
+    
+}
+
+.gulag {
+    font-family: 'Gugi', cursive;
+}
+
+.robot {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}

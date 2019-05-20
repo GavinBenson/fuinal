@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gavin Benson</title>
+  <link rel="stylesheet" type="text/css" href="../css/page.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+</head>
+<body>
+  <script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+  <div id="master">
+    <div id="header" style="height:auto;">
+      <h1>My Project Portfolio</h1>
+      <h2>Created by Gavin Benson</h2>
+      <div class="container" onclick="myFunction(this)" style="float: right;">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+    </div>
+    <div id="content">
+      <h2>1. Mongoose</h2>
+      <p>Mongoose is used to model schemas in MongoDB. This helps improve efficiency and planning.</p>
+      <div id="space">
+          <img class="stepimg" src="../img/p6img/Mongoose.png" alt="Mongoose"><br>
+      </div>
+      <h2>2. Schema Modeling</h2>
+      <p>This is an example of a book schema defined through Mongoose.</p>
+      <img class="stepimg" src="../img/p6img/mongooseSchema.png" alt="Schema Modeling With Mongoose"><br>
+      <h2>3. Express</h2>
+      <p>We use express to run the server and app. Both Mongoose and Express are required.</p>
+      <img class="stepimg" src="../img/p6img/mongooseAndExpress.png" alt="Express"><br>
+      <h2>4. Querying Database Using Node</h2>
+      <img class="stepimg" src="../img/p6img/MongoBooksRoute.png" alt="Books Route"><br>
+      <img class="stepimg" src="../img/p6img/MongoNode.png" alt="Mongo Node"><br>
+      <h1>RegEx Searches with MongoDB</h1>
+      <h2>1. Finding names that start with 'T' or 'S'.</h2>
+      <img class="stepimg" src="../img/p6img/MongoRegEx1.png" alt="MongoDB RegEx 1"><br>
+      <h2>2. Finding names with an 'a' in the middle of the name.</h2>
+      <div id="space">
+          <img class="stepimg" src="../img/p6img/MongoRegEx2.png" alt="MongoDB RegEx 2"><br>
+      </div>
+      <h2>3. Finding names with an 'o' and age is less than 9.</h2>
+      <img class="stepimg" src="../img/p6img/MongoRegEx3.png" alt="MongoDB RegEx 3">
+      <h2>4. "OR" logic. Finding dogs whose age is less than 5 OR age is greater than 10.</h2>
+      <img class="stepimg" src="../img/p6img/MongoOr.png" alt="MongoDB Or">
+      <h2>5. "AND" logic. Finding dogs who knows the tricks "sit" AND "roll over"</h2>
+      <img class="stepimg" src="../img/p6img/MongoAnd.png" alt="MongoDB And">
+      <h1>Crossword RegEx</h1>
+      <h2>Answer: NOSFERATU</h2>
+      <img class="stepimg" src="../img/p6img/CrosswordRegEx.png" alt="CrosswordRegEx">
+      <p>
+      </p><ol>
+              <li>1st row, 1st column it has to be part of the [ONE] character set and be either NF, FA, A, or FN going down.</li>
+              <li>1st row, 2nd column it has to be either P, ET, O, or TEA going down. A part of the [ONE] character set, and be either an O or S.</li>
+              <li>1st row, 3rd column it has to fit the chracter sets of [RUSH],[SUPER],[SKA], and be either an O or S.</li>
+              <li>2nd row, 1st column is fulfilled by NF going down from the first row.</li>
+              <li>2nd row, 2nd column has to either be 'RE' or 'ER' and fulfill either P, ET, O, or TEA.</li>
+              <li>2nd row, 3rd column is determined by 2nd row, 2nd column.</li>
+              <li>3rd row, 1st column has to start with A, due to the fact that 'A+' means at least one or more A and it is at the beginning.</li>
+              <li>3rd row, 2nd column is fulfilled by 2nd row, 2nd column.</li>
+              <li>3rd row, 3rd column has to be part of the character sets of [RUSH],[STUPA],[SUPER], and [TUB].</li>
+
+          </ol>
+      <p></p>
+    </div>
+    <div id="side">
+
+      <img src="../img/logo_mountainview-06.jpg" class="imgside" width="230px">
+      <img src="../img/westada_black-01_1.png" class="imgside" width="230px">
+      <img src="../img/logo_centennial-04.png" class="imgside" width="230px">
+
+    </div>
+    <div id="footer">
+      <h2>Footer</h2>
+      <div id="one"></div>
+    </div>
+  </div>
+
+</body>
